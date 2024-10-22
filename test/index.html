@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roshni Homestay</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <img src="logo4.png" alt="Roshni Homestay Logo"> <!-- Add your logo here -->
@@ -22,14 +24,45 @@
         </div>
     </nav>
 
-    <!-- Sidebar -->
-    <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Contact</a>
-        <a href="#">About Us</a>
-        <a href="#">Images</a>
-    </div>
+    
+    <!-- Restaurant Image Section -->
+    <section class="hero-section">
+        <img src="homestay.jpg" alt="Restaurant Image" class="restaurant-img"> <!-- Add the restaurant image here -->
+        <h1 class="homestay-title">ROSHNI HOMESTAY</h1>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="facilities">
+        
+        <div class="facility-item">
+            <i class="fas fa-wifi"></i>
+            <h3>Free WiFi</h3>
+        </div>
+        <div class="facility-item">
+            <i class="fas fa-eye"></i>
+            <h3>Wonderful View</h3>
+        </div>
+        <div class="facility-item">
+            <i class="fas fa-car"></i>
+            <h3>Parking</h3>
+        </div>
+        <div class="facility-item">
+            <i class="fas fa-snowflake"></i>
+            <h3>Air Conditioning</h3>
+        </div>
+        <div class="facility-item">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+        </div>
+    </section>
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">About Us</a>
+    <a href="#">Images</a>
+</div>
 
     <script src="script.js"></script>
 </body>
