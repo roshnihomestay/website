@@ -1,0 +1,242 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #007BFF; /* Blue color */
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0; /* Start hidden */
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: width 0.3s; /* Smooth transition */
+    padding-top: 60px;
+    z-index: 2; /* Ensure it's above other content */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Restaurant Image and Title Section */
+.hero-section {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.restaurant-img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Limit height for large screens */
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.homestay-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px; /* Responsive font size */
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Facilities Section */
+.facilities {
+    display: flex;
+    flex-direction: column; /* Stack title and icons vertically */
+    align-items: center; /* Center items */
+    margin: 30px 0;
+}
+
+.facilities-title {
+    font-size: 32px; /* Title size */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF; /* Title color */
+}
+
+.facility-container {
+    display: flex; /* Use flex to layout the icons */
+    justify-content: center; /* Center icons */
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.facility-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Space between items */
+}
+
+.facility-item i {
+    font-size: 24px; /* Smaller icon size */
+    color: #007BFF; /* Blue color for icons */
+}
+
+.facility-item h3 {
+    margin-top: 5px; /* Space between icon and text */
+    font-size: 18px; /* Title size */
+}
+
+/* Map Section */
+.map-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.map-title {
+    font-size: 28px; /* Map section title */
+    font-weight: bold;
+    color: #007BFF; /* Title color */
+}
+
+/* Contact Section */
+.contact-section {
+    margin: 40px 0; /* Space for the section */
+    text-align: center; /* Center text */
+}
+
+.contact-title {
+    font-size: 32px; /* Title size */
+    font-weight: bold;
+    color: #007BFF; /* Title color */
+}
+
+.contact-info {
+    display: flex; /* Use flex for contact items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+}
+
+.contact-item {
+    margin: 10px 0; /* Space between contact items */
+    font-size: 18px; /* Font size */
+    display: flex; /* Use flex for icon and text */
+    align-items: center; /* Center items */
+}
+
+.contact-item i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Ratings Section */
+.ratings-section {
+    margin: 40px 0; /* Space for the section */
+    text-align: center; /* Center text */
+}
+
+.ratings-title {
+    font-size: 32px; /* Title size */
+    font-weight: bold;
+    color: #007BFF; /* Title color */
+}
+
+.rating-item {
+    margin: 10px 0; /* Space between rating items */
+}
+
+.progress {
+    background-color: #f3f3f3; /* Background of progress bar */
+    border-radius: 5px;
+    overflow: hidden; /* Hide overflow for rounded corners */
+    height: 20px; /* Height of the progress bar */
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Space between progress bars */
+}
+
+.progress-bar {
+    height: 100%; /* Fill the height of the progress */
+    background-color: #007BFF; /* Blue color for progress */
+    color: white; /* Text color */
+    text-align: center; /* Center text in the progress bar */
+    line-height: 20px; /* Center text vertically */
+    transition: width 2s ease; /* Smooth transition for the width change */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+    }
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        display: none; /* Hide by default */
+    }
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+}
